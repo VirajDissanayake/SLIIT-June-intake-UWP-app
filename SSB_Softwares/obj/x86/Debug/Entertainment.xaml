@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="SSB_Softwares.Entertainment"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SSB_Softwares"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF212126" FocusVisualPrimaryBrush="#FF343434" RequestedTheme="Dark">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="849*"/>
+            <ColumnDefinition Width="431*"/>
+        </Grid.ColumnDefinitions>
+        <SplitView x:ConnectionId='1' x:Name="menu1" HorizontalAlignment="Left" IsPaneOpen="False" DisplayMode="CompactOverlay" CompactPaneLength="80" OpenPaneLength="300" Height="1359"  VerticalAlignment="Top" Width="180" Margin="0,-3,-180,-636" Grid.ColumnSpan="2">
+            <SplitView.Pane>
+                <StackPanel x:ConnectionId='5' Background="#FF252526"                                                     Margin="0,40,0,-40" RequestedTheme="Dark">
+                    <Button x:ConnectionId='6' x:Name="menu" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Height="77" Width="76" Foreground="White" FontSize="36"              Background="{x:Null}" FocusVisualPrimaryBrush="#00000000" RequestedTheme="Dark"></Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="8,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                        <Button x:ConnectionId='7' Content="        Home" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="172" Margin="-100,0,0,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}"              RequestedTheme="Dark">
+                        </Button>
+                    </StackPanel>
+
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+        <Button x:ConnectionId='2' Content="    KDrama" HorizontalAlignment="Center" Margin="343,148,136.688,0" VerticalAlignment="Top" Height="164" Width="369" Foreground="White" FontSize="36" FontFamily="Segoe UI Historic" BorderBrush="#FF15191F" FocusVisualPrimaryBrush="#FF2626CC" FontWeight="Bold"                RequestedTheme="Dark" >
+            <Button.FocusVisualSecondaryBrush>
+                <ImageBrush ImageSource="Assets/7647bb7539382dd708010625c4598021.gif"/>
+            </Button.FocusVisualSecondaryBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/7647bb7539382dd708010625c4598021.gif" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:ConnectionId='3' Content="    Google+" HorizontalAlignment="Center" Margin="343,322,136.688,0" VerticalAlignment="Top" Height="164" Width="369" Foreground="White" FontSize="36" FontFamily="Segoe UI Historic" FocusVisualSecondaryBrush="#FF4141CC" BorderBrush="#FF15191F" FocusVisualPrimaryBrush="#FF2626CC" FontWeight="Bold" RequestedTheme="Dark"                >
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/7647bb7539382dd708010625c4598021.gif" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:ConnectionId='4' x:Name="spd"  Content="        TV-Series" HorizontalAlignment="Center" Margin="723,148,188,0" VerticalAlignment="Top" Height="164" Width="369" Foreground="White" FontSize="36" FontFamily="Segoe UI Historic" Grid.ColumnSpan="2" BorderBrush="#FF15191F" FocusVisualPrimaryBrush="#FF2626CC" FontWeight="Bold" RequestedTheme="Dark"             >
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/7647bb7539382dd708010625c4598021.gif" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="57" Margin="0,-11,-2424,0" VerticalAlignment="Top" Width="2424" Fill="#FFEA5C25" RequestedTheme="Dark"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,7,-228,0" Text="Entertainment" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="123" FontFamily="Segoe UI Historic" Foreground="White" FontSize="18" Grid.ColumnSpan="2"/>
+
+
+
+
+    </Grid>
+</Page>
+

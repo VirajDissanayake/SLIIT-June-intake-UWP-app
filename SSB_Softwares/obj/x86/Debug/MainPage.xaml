@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="SSB_Softwares.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SSB_Softwares"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" UseLayoutRounding="False" RequestedTheme="Dark" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10,0,-10,0" >
+        <Canvas HorizontalAlignment="Left" Height="1103" Margin="-11,-5,0,-378" VerticalAlignment="Top" Width="309" Background="#FF002060" RequestedTheme="Dark"/>
+        <Button x:ConnectionId='1' x:Name="b1"                  Content="Home" HorizontalAlignment="Left" Margin="-9,223,0,0" VerticalAlignment="Top" Height="92" Width="301" Foreground="#FF5555C3" FontFamily="Segoe UI Historic" FontSize="18" BorderThickness="0,0,0,0" FocusVisualSecondaryBrush="#99040497" FocusVisualPrimaryBrush="Blue" RequestedTheme="Dark" Background="#FF002060"/>
+        <WebView x:ConnectionId='2' x:Name="w1"  HorizontalAlignment="Stretch" Margin="293,40,2,-416" VerticalAlignment="Stretch" Source="http://courseweb.sliit.lk/" RequestedTheme="Dark"/>
+        <Button x:ConnectionId='3' x:Name="b1_Copy"                  Content=" My account" HorizontalAlignment="Left" Margin="-9,319,0,0" VerticalAlignment="Top" Height="92" Width="301" Foreground="#FF5555C3" FocusVisualPrimaryBrush="#FF2424F1" FontFamily="Segoe UI Historic" FontSize="18" BorderThickness="0,0,0,0" FocusVisualSecondaryBrush="#99040497" RequestedTheme="Dark" Background="#FF002060"/>
+        <Button x:ConnectionId='4' x:Name="b1_Copy1"                  Content="Modules" HorizontalAlignment="Left" Margin="-9,415,0,0" VerticalAlignment="Top" Height="91" Width="300" Foreground="#FF5555C3" FocusVisualPrimaryBrush="#FF2424F1" FontFamily="Segoe UI" FontSize="18" BorderThickness="0,0,0,0" FocusVisualSecondaryBrush="#99040497" RequestedTheme="Dark" Background="#FF002060"/>
+        <Button x:ConnectionId='5' x:Name="b1_Copy2" Content="Google" HorizontalAlignment="Left" Margin="-9,511,0,0" VerticalAlignment="Top" Height="91" Width="300" Foreground="#FF5555C3" FocusVisualPrimaryBrush="#FF2424F1" FontFamily="Segoe UI" FontSize="18" BorderThickness="0,0,0,0" FocusVisualSecondaryBrush="#99040497"                RequestedTheme="Dark" Background="#FF002060"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="51,0,0,-12" Text="Coppyright©Viraj Dissanayake" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="215" FontSize="14" Foreground="#FF4949DC" FontFamily="Segoe UI"/>
+        <Image HorizontalAlignment="Left" Height="65" Margin="26,237,0,0" VerticalAlignment="Top" Width="68" Source="Assets/home.png"/>
+        <Image HorizontalAlignment="Left" Height="57" Margin="29,343,0,0" VerticalAlignment="Top" Width="65" Source="Assets/people.png"/>
+        <Image HorizontalAlignment="Left" Height="53" Margin="30,437,0,0" VerticalAlignment="Top" Width="64" Source="Assets/mod.png"/>
+        <Image HorizontalAlignment="Left" Height="68" Margin="23,525,0,0" VerticalAlignment="Top" Width="75" Source="Assets/appbar.google.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="87,38,0,0" VerticalAlignment="Top" Width="130" Source="Assets/SLIIT_Logo_Crest.png"/>
+        <Button x:ConnectionId='6' x:Name="b1_Copy3"                  Content="June Intake" HorizontalAlignment="Left" Margin="-8,607,0,0" VerticalAlignment="Top" Height="91" Width="297" Foreground="#FF5555C3" FocusVisualPrimaryBrush="#FF2424F1" FontFamily="Segoe UI" FontSize="18" BorderThickness="0,0,0,0" FocusVisualSecondaryBrush="#99040497" RequestedTheme="Dark" Background="#FF002060"/>
+        <Image HorizontalAlignment="Left" Height="66" Margin="23,623,0,0" VerticalAlignment="Top" Width="72" Source="Assets/appbar.social.whatsapp.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="90" Margin="-29,-48,-655,0" VerticalAlignment="Top" Width="1964" Fill="#FF002060"/>
+        <TextBlock HorizontalAlignment="Left" Margin="84,196,0,0" Text="SLIIT June intake app" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="14" Foreground="White" FontFamily="Segoe UI Historic"/>
+        <Button x:ConnectionId='7' x:Name="b1_Copy4"                   Content="Entertainment" HorizontalAlignment="Left" Margin="-5,703,0,-74" VerticalAlignment="Top" Height="91" Width="296" Foreground="#FF5555C3" FocusVisualPrimaryBrush="#FF2424F1" FontFamily="Segoe UI" FontSize="18" BorderThickness="0,0,0,0" FocusVisualSecondaryBrush="#99040497" RequestedTheme="Dark" Background="#FF002060"/>
+        <Image HorizontalAlignment="Left" Height="66" Margin="21,715,0,-61" VerticalAlignment="Top" Width="72" Source="Assets/appbar.cup.png"/>
+        <Button x:ConnectionId='8' x:Name="b1_Copy5"                    Content="            Pariganaka Magaziene" HorizontalAlignment="Left" Margin="-5,797,0,-168" VerticalAlignment="Top" Height="91" Width="296" Foreground="#FF5555C3" FocusVisualPrimaryBrush="#FF2424F1" FontFamily="Segoe UI" FontSize="18" BorderThickness="0,0,0,0" FocusVisualSecondaryBrush="#99040497" RequestedTheme="Dark" Background="#FF002060"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="23,811,0,-151" VerticalAlignment="Top" Width="72" Source="Assets/appbar.3d.3ds.png"/>
+        <SplitView x:ConnectionId='9' x:Name="menu1" HorizontalAlignment="Left" IsPaneOpen="False" DisplayMode="CompactOverlay"  CompactPaneLength="45" OpenPaneLength="300" Height="52"  VerticalAlignment="Top" Width="174" Margin="241,91,0,0">
+            <SplitView.Pane>
+                <StackPanel x:ConnectionId='15' Background="#FF002060"                                                     Margin="-7,-2,-43,-6" RenderTransformOrigin="0.694,0.502">
+
+                    <StackPanel Orientation="Horizontal" Margin="3,0,160,0" Height="55">
+                        <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="48" Margin="0,4,29,3" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                        <Button x:ConnectionId='16' x:Name="drive" Content="Drive" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="184" Margin="-89,0,-23,0" Height="57"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" RequestedTheme="Dark"              />
+                    </StackPanel>
+
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+        <SplitView x:ConnectionId='10' x:Name="menu2" HorizontalAlignment="Left" IsPaneOpen="False" DisplayMode="CompactOverlay"  CompactPaneLength="45" OpenPaneLength="300" Height="50"  VerticalAlignment="Top" Width="172" Margin="244,40,0,0">
+            <SplitView.Pane>
+                <StackPanel x:ConnectionId='13' Background="#FF002060"                                                       Margin="-4,-4,38,-10" RenderTransformOrigin="0.694,0.502">
+                    <StackPanel Orientation="Horizontal" Height="60" Margin="0,0,79,0">
+                        <Button Content="&#xE99A;" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="57" Margin="-2,0,48,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                        <Button x:ConnectionId='14' x:Name="git" Content="    Git Hub" FontSize="24" VerticalAlignment="Top" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="177" Margin="-100,0,-5,-4" Height="64"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" RequestedTheme="Dark"            />
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+        <TextBlock x:ConnectionId='11' x:Name="U1" HorizontalAlignment="Right" Margin="0,38,0,0" Text="Username-robinviraj@hotmail.com" TextWrapping="Wrap" VerticalAlignment="Top" Height="0" Width="263"/>
+        <TextBlock x:ConnectionId='12' x:Name="B1" HorizontalAlignment="Right" Margin="0,58,0,0" Text="Password-741852963qwertyu" TextWrapping="Wrap" VerticalAlignment="Top" Height="0" Width="263"/>
+        <TextBlock HorizontalAlignment="Left" Margin="124,6,0,0" Text="Home" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="77" FontFamily="Segoe UI Historic" FontSize="18"/>
+
+
+
+    </Grid>
+</Page>
+

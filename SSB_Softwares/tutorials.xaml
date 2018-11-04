@@ -1,0 +1,100 @@
+﻿<Page
+    x:Class="SSB_Softwares.tutorials"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SSB_Softwares"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Foreground="White">
+    <Page.Background>
+        <ImageBrush ImageSource="Assets/loading.gif" Stretch="UniformToFill"/>
+    </Page.Background>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="811*"/>
+            <ColumnDefinition Width="469*"/>
+        </Grid.ColumnDefinitions>
+
+        <WebView x:Name="w2" HorizontalAlignment="Left" Height="1100" Margin="77,-6,-1783,-374" VerticalAlignment="Top" Width="1856" Source="http://courseweb.sliit.lk/course/view.php?id=41" Grid.ColumnSpan="2" RequestedTheme="Dark">
+            <WebView.FocusVisualPrimaryBrush>
+                <ImageBrush/>
+            </WebView.FocusVisualPrimaryBrush>
+        </WebView>
+        <Image x:Name="I1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="1357" Margin="-235,-228,-663,-409" VerticalAlignment="Top" Width="2178" Source="Assets/loading.gif" Stretch="UniformToFill"/>
+        <Rectangle HorizontalAlignment="Left" Height="71" Margin="-2,-27,-353,0" VerticalAlignment="Top" Width="1935" Grid.ColumnSpan="2" Fill="#FF002060"/>
+        <SplitView x:Name="menu1" HorizontalAlignment="Left" IsPaneOpen="False" DisplayMode="CompactOverlay" CompactPaneLength="80" OpenPaneLength="300" Height="1094"  VerticalAlignment="Top" Width="560" Margin="0,18,0,-392">
+            <SplitView.Pane>
+                
+                    <StackPanel Background="#FF002060" PointerEntered="On_Hover" PointerExited="Off_Hover" Margin="0,-9,-141,0" RenderTransformOrigin="0.694,0.502">
+                        <Button x:Name="menu" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Height="77" Width="76" Foreground="White" FontSize="36" Click="Menu" Background="{x:Null}" FocusVisualPrimaryBrush="#00000000" RequestedTheme="Dark"></Button>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="-2,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                            <Button Content="Home" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="302" Margin="-100,0,-130,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Home" RequestedTheme="Dark">
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                            <Button Content="    Modules" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="296" Margin="-98,0,-126,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Modules" RequestedTheme="Dark">
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                            <Button Content="      Project proposal" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="296" Margin="-98,0,-126,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Pro" RequestedTheme="Dark">
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                            <Button Content="      Templates" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="296" Margin="-98,0,-126,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Tmp" RequestedTheme="Dark">
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                            <Button Content="      UI Design" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="296" Margin="-98,0,-126,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="T1" RequestedTheme="Dark">
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                            <Button Content="          Passing data" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="295" Margin="-98,0,-125,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" RequestedTheme="Dark" Click="Pass"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" RequestedTheme="Dark"/>
+                            <Button Content="      Validation" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="295" Margin="-98,0,-125,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Validation" RequestedTheme="Dark"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Click="Why" RequestedTheme="Dark"/>
+                            <Button Content="   Why C# " FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="295" Margin="-98,0,-125,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Csharp" RequestedTheme="Dark"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Click="Why" RequestedTheme="Dark"/>
+                            <Button Content="   IReport " FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="295" Margin="-98,0,-125,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Ireport" RequestedTheme="Dark"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Click="Why" RequestedTheme="Dark"/>
+                            <Button Content="     Making JAR file " FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="295" Margin="-98,0,-125,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Jar" RequestedTheme="Dark"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Click="Web" RequestedTheme="Dark"/>
+                            <Button Content="      Making EXE file" FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="295" Margin="-98,0,-125,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Exe" RequestedTheme="Dark"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Click="Web" RequestedTheme="Dark"/>
+                            <Button Content="        Open a Web page " FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="295" Margin="-98,0,-125,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Web" RequestedTheme="Dark"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="" HorizontalAlignment="Stretch" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Stretch" Height="72" Margin="0,0,44,0" Foreground="White" FontSize="36"  Background="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Click="Web" RequestedTheme="Dark"/>
+                            <Button Content="     Splash screen " FontSize="24" VerticalAlignment="Center" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FFFFFBFB" Width="295" Margin="-98,0,-125,0" Height="72"  Background="{x:Null}" Padding="0,0,0,0" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Click="Splash" RequestedTheme="Dark"/>
+                        </StackPanel>
+                    </StackPanel>
+                
+            </SplitView.Pane>
+        </SplitView>
+        <TextBlock HorizontalAlignment="Left" Margin="105,7,0,0" Text="Tutorials" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="84" FontFamily="Segoe UI Historic" Foreground="White" FontSize="18"/>
+
+
+
+
+
+    </Grid>
+</Page>

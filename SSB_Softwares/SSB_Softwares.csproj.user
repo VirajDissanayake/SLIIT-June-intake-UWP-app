@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugEngines>{F200A7E7-DEA5-11D0-B854-00A0244A1DE2}</DebugEngines>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AppIconSource>C:\Users\Viraj Dissanayake\source\repos\SSB_Softwares\SSB_Softwares\Assets\SLIIT_Logo_Crest.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Viraj Dissanayake\source\repos\SSB_Softwares\SSB_Softwares\Assets\special_logo_alpha.png</SplashScreenSource>
+    <MediumTileSource>C:\Users\Viraj Dissanayake\source\repos\SSB_Softwares\SSB_Softwares\Assets\SLIIT_Logo_Crest.png</MediumTileSource>
+    <WideTileSource>C:\Users\Viraj Dissanayake\source\repos\SSB_Softwares\SSB_Softwares\Assets\SLIIT_Logo_Crest.png</WideTileSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+</Project>
